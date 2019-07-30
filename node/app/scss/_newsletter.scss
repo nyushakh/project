@@ -1,0 +1,152 @@
+.newsletter {
+  border: 1px solid $color-primary-dark;
+  margin-bottom: 60px;
+  &_title {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+
+.form {
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_input {
+    width: 270px;
+    border: 1px solid $color-primary-dark;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px  ;
+    -moz-border-radius: 3px  ;
+    -ms-border-radius: 3px  ;
+    -o-border-radius: 3px  ;
+    opacity: 0.45;
+}
+  &_contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+  &_textarea {
+    width: 570px;
+    border: 1px solid $color-primary-dark;
+    border-radius: 3px;
+    -webkit-border-radius: 3px  ;
+    -moz-border-radius: 3px  ;
+    -ms-border-radius: 3px  ;
+    -o-border-radius: 3px  ;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    opacity: 0.45;
+  }
+  &_button {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 3px  ;
+    -webkit-border-radius: 3px  ;
+    -moz-border-radius: 3px  ;
+    -ms-border-radius: 3px  ;
+    -o-border-radius: 3px  ;
+    width: 270px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $color-primary-dark;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.form_input:focus, .form_textarea:focus {
+  background-color: rgba($color-primary-dark, 0.12);
+  color: #000000;
+  opacity: 1;
+}
+
+.form-button_send {
+  display: none;
+}
+
+.form_button:hover {
+  cursor: pointer;
+}
+
+.form_contact_name, .form_contact_email, .form_contact_info {
+  position: relative;
+}
+
+.invalid {
+  color: red;
+  font-size: 10px;
+}
+#username-error, #email-error, #textarea-error {
+  position: absolute;
+  top: -16px;
+  left: 0;
+}
+
+.form_textarea.invalid, .form_input.invalid {
+  border-color: red;
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .newsletter_title {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  .form {
+    width: 100%;
+    &_input, &_textarea {
+      width: 80%;
+      min-width: 220px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 15px;
+      font-size: 10px;
+    }
+    &_contacts {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    &_textarea {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 130px;
+    }
+    &_button {
+      width: 80%;
+      max-width: 220px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+  }
+}

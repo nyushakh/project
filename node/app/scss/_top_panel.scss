@@ -1,0 +1,22 @@
+$color-primary: #000;
+$color-primary-light: #fff;
+$color-primary-dark: #14A5DA;
+$color-secondary: #E76400;
+$color-secondary-light: #DCE5E9;
+$color-secondary-dark: #001F2B;
+.top-panel {
+  background: $color-secondary-light;
+  padding: 11px 0;
+  .top-panel_container {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-panel {
+    display: none;
+  }
+}

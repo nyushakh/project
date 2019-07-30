@@ -1,0 +1,17 @@
+.social {
+  &_item {
+    display: flex;
+  }
+
+  &_link {
+    margin-right: 12px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.social_title {
+  margin-bottom: 24px;
+}

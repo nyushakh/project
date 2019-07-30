@@ -1,0 +1,122 @@
+.owl-dots {
+    bottom: 61px;
+    left: 50%;
+    transform: translateX(-50%)    ;
+    -webkit-transform: translateX(-50%)    ;
+    -moz-transform: translateX(-50%)    ;
+    -ms-transform: translateX(-50%)    ;
+    -o-transform: translateX(-50%)    ;
+}
+.owl-dot .active {
+    border: none;
+    outline: none;
+    height: 3px;
+}
+
+.slider-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: block;
+    padding-top: 115px;
+    padding-bottom: 235px;
+    background-size: cover;
+    }
+.item1 {
+    background: url("../img/slide_1.jpg") no-repeat center center, rgba(0, 0, 0, 0.45);
+    background-size: cover;
+}
+.item2 {
+    background: url("../img/slide_2.jpg") no-repeat center center, rgba(0, 0, 0, 0.45);
+    background-size: cover;
+}
+.item3 {
+    background: url("../img/slide_3.jpg") no-repeat center center, rgba(0, 0, 0, 0.45);
+    background-size: cover;
+}
+
+.slide_title {
+    font-size: 46px;
+    line-height: 54px;
+    color: #ffffff;
+    max-width: 760px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.slide_text {
+    font-size: 24px;
+    color: #ffffff;
+    max-width: 660px;
+    line-height: 30px;
+}
+
+.slider-button {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 7px 14px;
+    border: none;
+    outline: none;
+    background: $color-primary-dark;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    align-self: flex-start;
+}
+
+.slider-arrows {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.slider-arrow-right {
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    position: absolute;
+    left: 9vw;
+    bottom: 50px;
+}
+
+.slider-arrow-left {
+    position: absolute;
+    right: 9vw;
+    bottom: 50px;
+}
+
+.slider {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .item {
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+    .slide_title {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .slide_text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .slider-arrow-left, .slider-arrow-right {
+        width: 18px;
+        bottom: 10px;
+    }
+    .owl-dot, .owl-dot span {
+        width: 30px !important;
+        margin-right: 10px;
+    }
+    .owl-dots {
+        bottom: 11px;
+    }
+}
