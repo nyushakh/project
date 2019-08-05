@@ -157,28 +157,6 @@ ul {
   padding-top: 40px;
 }
 
-.menu_items li > ul:before {
-  content: '';
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #eee;
-}
-
-.menu_items li > ul:hover {
-  display: block;
-}
-
-.menu_items li:hover > ul {
-  display: block;
-}
-
-.menu_items li:hover > ul > li {
-  float: none;
-}
-
 .menu_items a {
   display: inline-block;
   line-height: 1;
