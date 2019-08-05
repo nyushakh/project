@@ -1,7 +1,7 @@
 Тестовое задание
 ###
 Запустить проект:
->cd node nmp i
+>project nmp i
 ###
 >gulp
 ###
