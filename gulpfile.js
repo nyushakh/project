@@ -22,7 +22,7 @@ const webpackstream = require("webpack-stream");
 function browserSync(done) {
   browsersync.init({
     server: {
-      baseDir: "app/"
+      baseDir: "node/app/"
     },
     port: 3000
   });
