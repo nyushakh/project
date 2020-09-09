@@ -1,7 +1,7 @@
 Тестовое задание
 ###
 Запустить проект:
->project nmp i
+>project npm i
 ###
 >gulp
 ###
